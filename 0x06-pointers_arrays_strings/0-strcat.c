@@ -24,7 +24,7 @@ char *_strcat(char *dest, char *src)
 	{
 
 		*d_itter = *src;
-		src = src +1;
+		src = src + 1;
 		d_itter = d_itter + 1;
 	}
 	*d_itter = *src;
