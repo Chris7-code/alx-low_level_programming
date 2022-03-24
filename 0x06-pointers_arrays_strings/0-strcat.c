@@ -27,6 +27,6 @@ char *_strcat(char *dest, char *src)
 	src = src +1;
 	d_itter = d_itter + 1;
 	}
-	*_itter = *src;
+	*d_itter = *src;
 	return (dest);
 }
