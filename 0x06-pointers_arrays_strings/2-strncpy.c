@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * _strncpy - function that concatenates two strings.
- * @n: is the pointer is the origin.
- * @dest: is the pointer is the destiny.
- * Return: d.
+ * _strncpy - function that copies a strings.
+ * @src: pointer to source char.
+ * @dest: pointer to destination char .
+ * Return: char
  */
 
 char *_strncpy(char *dest, char *src, int n)
@@ -16,8 +16,6 @@ char *_strncpy(char *dest, char *src, int n)
 	 	i++;
 	}	
 	while (i != n)
-
  		 dest[i++] = '\0';
-
 	return (dest);
 }
