@@ -5,12 +5,12 @@
  * @s: string character
  * Return: void
  */
-void rev_-string(char *s)
+void rev_string(char *s)
 {
 	int i,j = 0;
 	char r[1000];
 
-	while (s[i] != '/0')
+	while (s[i] != '\0')
 	{
 		r[i] = s[i];
 		i++;
