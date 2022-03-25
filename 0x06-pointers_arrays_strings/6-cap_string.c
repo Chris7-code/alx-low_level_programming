@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * cap_string - a function that capitalizes all words of a string
+ * cap_string - a function that capitalizes all words of a string.
  * @n: input string
- * Return: caps om first letter of a separator
+ * Return: caps om first letter of a separator.
  */
 char *cap_string(char *n)
 {
