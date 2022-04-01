@@ -22,7 +22,7 @@ int coinConverter(int i)
 		else if (i % 10 == 0)
 			i -= 10;
 		else if (i % 5 == 0)
-			i -=5;
+			i -= 5;
 		else if (i % 2 == 0)
 		{
 			if (i % 10 == 6)
@@ -35,9 +35,9 @@ int coinConverter(int i)
 
 		count++;
 	}
-
 	return (count);
 }
+
 /**
  * main - Takes in exactly one argument for minimum coin count
  * @argc: Number of command line arguments
@@ -63,9 +63,7 @@ int main(int argc, char *argv[])
 	else
 	{
 		coin = coinConverter(i);
-
 		printf("%d\n", coin);
 	}
-	
 	return (0);
 }
