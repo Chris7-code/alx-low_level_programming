@@ -14,7 +14,7 @@
 int main(int argc, char *argv[])
 {
 	int cents;
-	
+
 	if (argc != 2)
 	{
 		printf("Error\n");
@@ -34,7 +34,6 @@ int main(int argc, char *argv[])
 	}
 
 	printf("%d\n", number_of_coins(cents));
-	
 	return (0);
 }
 
@@ -59,7 +58,7 @@ int is_positive_number(char *number)
 }
 
 /**
- * number_of_coins -determine the minimum  number of coins to make change 
+ * number_of_coins -determine the minimum  number of coins to make change
  * @cents: The amount of change
  *
  * Return: The minimum number of coins
