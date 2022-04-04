@@ -1,4 +1,6 @@
 #include "main.h"
+#include "stdlib.h"
+#include "stddef.h"
 
 /**
  * argstostr - concatenate all arguments into a new string
@@ -22,7 +24,7 @@ char *argstostr(int ac, char **av)
 			;
 	}
 
-	cat = (char *)malloc(sizeof(char) * size);
+	cat = (char *) malloc(sizeof(char) * size);
 
 	if (!cat)
 		return (NULL);
