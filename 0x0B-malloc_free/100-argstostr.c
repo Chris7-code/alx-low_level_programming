@@ -32,7 +32,8 @@ char *argstostr(int ac, char **av)
 	for (arg = 0, size = 0; arg < ac; ++arg, ++size)
 	{
 		for (chr = av[arg]; *chr; ++chr, ++size)
-			cat[size] = '\n';
+			cat[size] = *chr;
+		cat[size] = '\n';
 	}
 
 	cat[size] = '\0';
