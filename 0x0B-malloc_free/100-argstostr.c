@@ -31,7 +31,7 @@ char *argstostr(int ac, char **av)
 
 	for (arg = 0, size = 0; arg < ac; ++arg, ++size)
 	{
-		for (char = av[arg]; *chr; ++chr, ++size)
+		for (chr = av[arg]; *chr; ++chr, ++size)
 			cat[size] = '\n';
 	}
 
