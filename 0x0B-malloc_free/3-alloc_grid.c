@@ -16,9 +16,13 @@ int **alloc_grid(int width, int height)
 	if (width < 1 || height < 1)
 		return (NULL);
 
+	matrix = (int **)malloc(sizeof(int) * width);
+
+	if (!matrix)
+		return (NULL);
 	for (row = 0; row < height; ++row)
 	{
-		matrix = (int **)malloc(sizeof(int) * width);
+		matrix[row] = (int *)malloc(sizeof(int) * width);
 
 		if (!matrix[row])
 		{
@@ -29,7 +33,7 @@ int **alloc_grid(int width, int height)
 		}
 
 		for (column = 0; column < width; ++column)
-		matrix[row][column] = 0;
+			matrix[row][column] = 0;
 	}
 	return (matrix);
 }
