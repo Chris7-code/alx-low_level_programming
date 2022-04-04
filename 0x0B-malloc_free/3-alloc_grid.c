@@ -1,5 +1,6 @@
 #include "main.h"
-
+#include <stddef.h>
+#include <stdlib.h>
 /**
  * alloc_grid - create a 2-dimensional array with each element set to 0
  * @width: desired number of columns
@@ -17,7 +18,7 @@ int **alloc_grid(int width, int height)
 
 	for (row = 0; row < height; ++row)
 	{
-		matrix = (int **) malloc(sizeof(int) * width);
+		matrix = (int **)malloc(sizeof(int) * width);
 
 		if (!matrix[row])
 		{
