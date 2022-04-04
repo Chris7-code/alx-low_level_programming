@@ -15,11 +15,15 @@ char *create_array(unsigned int size, char c)
 	char *s;
 
 	if (size == 0)
+		s = malloc(size * sizeof(char));
+	else
 		return (NULL);
-	s = (char *)malloc(size * sizeof(char));
-
-	for (i = 0; i < size; i++)
+	if (s == NULL)
+		return (NULL);
+	while (i < size)
+	{
 		s[i] = c;
-	
+		i += 1;
+	}
 	return (s);
 }
