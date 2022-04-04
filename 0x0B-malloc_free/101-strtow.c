@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stddef.h>
 /**
  * _isspace - check if a character is whitespace
  * @c: the character to check
@@ -34,7 +34,7 @@ char **strtow(char *str)
 			break;
 		while (*(++pos) && !_isspace(*pos))
 			;
-	} while (+++w, *pos);
+	} while (++w, *pos);
 	if (!w)
 		return (NULL);
 	words = (char **) malloc(sizeof(char *) * (w + 1));
@@ -48,7 +48,7 @@ char **strtow(char *str)
 			break;
 		for (str = poss++; *pos && !_isspace(*pos); ++pos)
 			;
-		words[w] = (char *) malloc(sizeof(char) * (pos - str + 1));
+		words[w] = (char *)malloc(sizeof(char) * (pos - str + 1));
 		if (!words[w])
 		{
 			while (w > 0)
