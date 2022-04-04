@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * _strdup - create a new arrat containing a copy of the string
@@ -21,7 +22,7 @@ char *_strdup(char *str)
 		dup = malloc(sizeof(char) * size);
 		if (dup)
 		{
-			while (sixe--)
+			while (size--)
 				dup[size] = str[size];
 			return (dup);
 		}
