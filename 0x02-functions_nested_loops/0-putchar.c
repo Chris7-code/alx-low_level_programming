@@ -9,7 +9,7 @@ int main(void)
 {
 	char *brown;
 
-	for (brown = "main\n"; *brown != '\0'; ++brown)
+	for (brown = "_putchar\n"; *brown != '\0'; ++brown)
 		_putchar(*brown);
 	return (0);
 }
