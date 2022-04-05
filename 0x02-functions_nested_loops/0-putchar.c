@@ -1,13 +1,15 @@
 #include "main.h"
 
 /**
- * _putchar - writes the character c to stdout
- * @c: the character to print
+ * main - prints main, followed by anew line.
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * Return: 0 (success)
  */
-int _putchar(char c)
+int main(void)
 {
+	char *brown;
+
+	for (brown = "main\n"; *brown != '\0'; ++brown)
+		_putchar(*brown);
 	return (0);
 }
