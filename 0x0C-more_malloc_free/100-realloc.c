@@ -45,7 +45,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 
 /**
  * _memcpy - function that copies memory area
- * @dest: dest position 
+ * @dest: dest position
  * @src: source position
  * @n: size of bytes
  * Return: char
