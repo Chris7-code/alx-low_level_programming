@@ -10,7 +10,6 @@
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-	int i, count = 0;
 	lists_t *new;
 	list_t *temp;
 
@@ -21,22 +20,34 @@ list_t *add_node_end(list_t **head, const char *str)
 	for (i = 0; str[i] != '\0'; i++)
 		count++;
 
-	new->len = i;
+	new->len = _strlen(str);
 	new->str = strdup(str);
 	new->next = NULL;
 
 	if (*head == NULL)
-	{
 		*head = new;
-		return (new);
+	else
+	{
+		temp = *head;
+		while (temp->next != NULL)
+			temp = temp->next;
+
+		temp->next = new;
 	}
-
-	temp = *head;
-
-	while (temp->next != NULL)
-		temp = temp->next;
-
-	temp->next = new;
-
 	return (new);
+}
+
+/**
+ * _strlen - returns length of string
+ * @s: character of string
+ * Return: length of string
+ */
+
+int _strlen(const char *s)
+{
+	int i;
+
+	while (s[i] != 0)
+		i++;
+	return (i);
 }
